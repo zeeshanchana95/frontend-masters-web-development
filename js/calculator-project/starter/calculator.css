@@ -1,0 +1,82 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: monospace;
+    padding: 0;
+    margin: 0;
+}
+
+.main-container {
+    width: 400px;
+    background-color: black;
+    text-align: center;
+}
+
+
+.buttons-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-gap: 2px;
+/*     
+    grid-template-areas: 
+                        "d d b b"
+                        "b b b b"
+                        "b b b b"
+                        "b b b b"
+                        "t t t b" */
+
+}
+
+.btn {
+    grid-column: 1fr;
+}
+.double {
+    grid-column: span 2;
+}
+
+.tripple {
+   grid-column: span 3;
+}
+
+
+/* STYLES */
+.input-section {
+    color: white;
+    font-size: 40px;
+    font-family: "Courier New", Courier, monospace;
+    text-align: right;
+    padding: 20px 5px;
+    background-color: black;
+}
+
+.btn, .double, .tripple {
+    background-color: #d8d9db;
+    color: black;
+    height: 100px;
+    border: none;
+    border-radius: 0;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #ebebeb;
+}
+.btn:active {
+    background-color: #bbbcbe;
+}
+
+.operator {
+    background-color: #df974c;  
+    color:white;
+}
+
+.operator:hover {
+    background-color: #dfb07e;
+}
+.operator:active {
+    background-color: #dd8d37;
+}
